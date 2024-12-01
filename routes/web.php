@@ -1,14 +1,17 @@
 <?php
 
-
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('/register', [AuthController::class, 'register']);
-Route::post('/login', [AuthController::class, 'login']);
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');
 
-Route::middleware('auth:sanctum')->group(function () {
-    Route::post('/posts', [PostController::class, 'store']);
-    Route::get('/posts/{categoryId}', [PostController::class, 'index']);
+// Ruta para la vista de login
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+Route::get('/', function () {
+    return view('auth.login');
 });
+
