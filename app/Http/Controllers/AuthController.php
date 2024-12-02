@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
+    function index()
+    {
+        $users = User::select('id','name')->get();
+        return response()->json(['users' => $users]);
+    }
+
     // Registro de usuario
     public function register(Request $request)
     {
