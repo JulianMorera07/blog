@@ -61,7 +61,7 @@ Este proyecto es un sistema básico de gestión de usuarios y posts, desarrollad
 9. Abre el frontend:
     - Una vez hecho el paso 7 y 8 ve a tu navegador favorito ingresa a la IP `127.0.0.1:8000/register` o `127.0.0.1:8000/login` si ya estas registrado.
    
-10. Estas son las rutas que se pueden consumir por medio de postman en la IP local `127.0.0.1:8000` y por que metodo:
+10. Estas son las rutas que se pueden consumir por medio de postman en la IP local `127.0.0.1:8000/api` y por que metodo:
     - `get /categories`
     - `get /posts/{categoryId}`
     - `post /create-posts`
