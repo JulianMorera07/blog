@@ -83,6 +83,6 @@ Este proyecto es un sistema básico de gestión de usuarios y posts, desarrollad
 - Visualiza posts desde el frontend o usando herramientas como Postman.
 
 ## Autor
-- **Tu Nombre**
+- **Julian Cogua Morera**
 - [GitHub](https://github.com/JulianMorera07)
 
